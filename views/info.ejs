@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark info-color-dark">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#"><strong>Navbar</strong> </a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Links -->
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!--/.Navbar-->
+  <!-- <header class="jumbotron indigo" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg');
+  background-repeat: no-repeat; background-size: cover; background-position: center center;">
+   <div class="container">
+     <div class="d-flex justify-content-center">
+       <h1><strong> </strong></h1>
+     </div>
+   </div>
+ </header> -->
+
+<div class="container mt-5">
+  
+
+  <div class="row">
+    <div class="col-lg-5">
+      <img class="d-block w-100"
+              src="data:prod[0]/<%=prod[0].img.contentType%>;base64, 
+              <%=prod[0].img.data.toString('base64')%>"
+              alt="Second slide">
+    </div>
+    <div class="col-lg-6 mt-3">
+      <h2 class="h2-responsive product-name">
+        <strong><%= prod[0].prodname %></strong>
+      </h2>
+      <h4 class="h4-responsive">
+        <span class="green-text">
+          <strong>MRP.<%= prod[0].mrp %></strong>
+        </span>
+        <span class="grey-text">
+          <small>
+            <s>890</s>
+          </small>
+        </span>
+      </h4>
+      <ul class="row" style="list-style: none;">
+        <li>
+          <i class="fas fa-star fa-sm text-primary"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-primary"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-primary"></i>
+        </li>
+        <li>
+            <i class="fas fa-star fa-sm text-primary"></i>
+        </li>
+        <li>
+          <i class="fas fa-star-half-alt fa-sm text-primary"></i>
+        </li>
+        <span class="ml-1">4.9/50 <a href="#!" class="material-tooltip-main card-link" data-toggle="tooltip" data-placement="top" title="Read reviews">(542 reviews)</a></span>
+      </ul>
+      <p class="pt-1"></p>
+        <div class="table-responsive">
+          <table class="table table-sm table-borderless mb-0">
+            <tbody>
+              <tr>
+                <th class="pl-0 w-25" scope="row"><strong>Model</strong></th>
+                <td>Shirt 5407X</td>
+              </tr>
+              <tr>
+                <th class="pl-0 w-25" scope="row"><strong>Color</strong></th>
+                <td>Black</td>
+              </tr>
+              <tr>
+                <th class="pl-0 w-25" scope="row"><strong>Delivery</strong></th>
+                <td>USA, Europe</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr>
+
+      <!-- Add to Cart -->
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+
+            <select class="md-form mdb-select colorful-select dropdown-primary">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">White</option>
+              <option value="2">Black</option>
+              <option value="3">Pink</option>
+            </select>
+            <label>Select color</label>
+
+          </div>
+          <div class="col-md-6">
+
+            <select class="md-form mdb-select colorful-select dropdown-primary">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">XS</option>
+              <option value="2">S</option>
+              <option value="3">L</option>
+            </select>
+            <label>Select size</label>
+
+          </div>
+        </div>
+        
+
+          <button type="button" class="btn btn-primary btn-md mr-1 mb-2">Buy now</button>
+          <button type="button" class="btn btn-light btn-md mr-1 mb-2"><i
+              class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
+      </div>
+      <!-- /.Add to Cart -->
+    </div>
+  </div>
+
+</div>
+
+<footer class="page-footer font-small unique-color-dark">
+
+  <div style="background-color: #6351ce;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Company name</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">MDBootstrap</a>
+        </p>
+        <p>
+          <a href="#!">MDWordPress</a>
+        </p>
+        <p>
+          <a href="#!">BrandFlow</a>
+        </p>
+        <p>
+          <a href="#!">Bootstrap Angular</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Become an Affiliate</a>
+        </p>
+        <p>
+          <a href="#!">Shipping Rates</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+</html>

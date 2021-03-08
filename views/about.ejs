@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark info-color-dark">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#"><strong>Navbar</strong> </a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Links -->
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
+
+  <header class="jumbotron mb-0 indigo" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg');
+   background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <h1><strong> About Us </strong></h1>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <ol class="col-12 breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active">About Us</li>
+      </ol>
+      <div class="col-12">
+        <h3>About Us</h3>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12  col-sm-4 col-md-6">
+        <h2>Our History</h2>
+        <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence
+          in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it
+          enjoys patronage from the A-list clientele in Hong Kong. Featuring four of the best three-star
+          Michelin chefs in the world, you never know what will arrive on your plate the next time you visit
+          us.</p>
+        <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by
+          our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="card">
+          <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+          <div class="card-body">
+            <dl class="row">
+              <dt class="col-6">Started</dt>
+              <dd class="col-6">3 Feb. 2013</dd>
+              <dt class="col-6">Major Stake Holder</dt>
+              <dd class="col-6">HK Fine Foods Inc.</dd>
+              <dt class="col-6">Last Year's Turnover</dt>
+              <dd class="col-6">$1,250,375</dd>
+              <dt class="col-6">Employees</dt>
+              <dd class="col-6">40</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="card card-body bg-light">
+          <blockquote class="blockquote">
+            <p class="mb-0">You better cut the pizza in four pieces because
+              I'm not hungry enough to eat six.</p>
+            <footer class="blockquote-footer">Yogi Berra,
+              <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
+                P. Pepe, Diversion Books, 2014</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col col-sm col-md ">
+        <h2>Corporate Leadership</h2>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" role="tab" id="peterhead">
+              <h3 class="mb-0">
+                <a data-toggle="collapse" data-target="#peter">
+                  Peter Pan <small>Chief Epicurious Officer</small>
+                </a>
+              </h3>
+            </div>
+            <div class="collapse show" id="peter" data-parent="#accordion">
+              <div class="card-body">
+                <p class="d-none d-sm-block">Our CEO, Peter, credits his hardworking East Asian
+                  immigrant parents
+                  who undertook the arduous journey to the shores of America with the intention of
+                  giving their
+                  children the best future. His mother's wizardy in the kitchen whipping up the
+                  tastiest dishes
+                  with whatever is available inexpensively at the supermarket, was his first
+                  inspiration to create
+                  the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings
+                  his zeal for
+                  fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="dannyhead">
+              <h3 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-target="#danny">
+                  Dhanasekaran Witherspoon <small>Chief Food Officer</small>
+                </a>
+              </h3>
+            </div>
+            <div class="collapse" id="danny" data-parent="#accordion">
+              <div class="card-body">
+                <p class="d-none d-sm-block">Our CFO, Danny, as he is affectionately referred to by his
+                  colleagues, comes from a long established family tradition in farming and produce.
+                  His
+                  experiences growing up on a farm in the Australian outback gave him great
+                  appreciation for
+                  varieties of food sources. As he puts it in his own words, <em>Everything that runs,
+                    wins,
+                    and
+                    everything that stays, pays!</em></p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="agumbehead">
+              <h3 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-target="#agumbe">
+                  Agumbe Tang <small>Chief Taste Officer</small>
+                </a>
+              </h3>
+            </div>
+            <div class="collapse" id="agumbe" data-parent="#accordion">
+              <div class="card-body">
+                <p class="d-none d-sm-block">Blessed with the most discerning gustatory sense, Agumbe,
+                  our
+                  CTO,
+                  personally ensures that every dish that we serve meets his exacting tastes. Our
+                  chefs dread
+                  the
+                  tongue lashing that ensues if their dish does not meet his exacting standards. He
+                  lives by
+                  his
+                  motto, <em>You click only if you survive my lick.</em></p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="albertohead">
+              <h3 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-target="#alberto">
+                  Alberto Somayya <small>Executive Chef</small>
+                </a>
+              </h3>
+            </div>
+            <div class="collapse" id="alberto" data-parent="#accordion">
+              <div class="card-body">
+                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                  International
+                  experience having worked closely with whos-who in the culinary world, he specializes
+                  in creating
+                  mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the
+                    cuisines from the
+                    two craziest cultures, and you get a winning hit! Amma Mia!</em></em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-content">
+      <div class="col-12 col-sm-9">
+        <h2>Facts &amp; Figures</h2>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>&nbsp;</th>
+                <th>2013</th>
+                <th>2014</th>
+                <th>2015</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Employees</th>
+                <td>15</td>
+                <td>30</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <th>Guests Served</th>
+                <td>15000</td>
+                <td>45000</td>
+                <td>100,000</td>
+              </tr>
+              <tr>
+                <th>Special Events</th>
+                <td>3</td>
+                <td>20</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <th>Annual Turnover</th>
+                <td>$251,325</td>
+                <td>$1,250,375</td>
+                <td>~$3,000,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark">
+
+    <div style="background-color: #6351ce;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!">MDWordPress</a>
+          </p>
+          <p>
+            <a href="#!">BrandFlow</a>
+          </p>
+          <p>
+            <a href="#!">Bootstrap Angular</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Your Account</a>
+          </p>
+          <p>
+            <a href="#!">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!">Shipping Rates</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+</html>

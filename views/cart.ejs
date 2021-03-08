@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark info-color-dark">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#"><strong>Navbar</strong> </a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Links -->
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!--/.Navbar-->
+  <header class="jumbotron indigo" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg');
+   background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <h1><strong> Cart </strong></h1>
+      </div>
+    </div>
+  </header>
+
+  <!--Section: Block Content-->
+<section>
+    <div class="container">
+
+    <!--Grid row-->
+    <div class="row">
+  
+      <!--Grid column-->
+      <div class="col-lg-8">
+  
+        <!-- Card -->
+        <div class="card wish-list mb-3">
+          <div class="card-body">
+  
+            <h5 class="mb-4">Cart (<span>2</span> items)</h5>
+  
+            <div class="row mb-4">
+              <div class="col-md-5 col-lg-3 col-xl-3">
+                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                  <img class="img-fluid w-100"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg" alt="Sample">
+                  <a href="#!">
+                    <div class="mask waves-effect waves-light">
+                      <img class="img-fluid w-100"
+                        src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg">
+                      <div class="mask rgba-black-slight waves-effect waves-light"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-9 col-xl-9">
+                <div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h5>Blue denim shirt</h5>
+                      <p class="mb-3 text-muted text-uppercase small">Shirt - blue</p>
+                      <p class="mb-2 text-muted text-uppercase small">Color: blue</p>
+                      <p class="mb-3 text-muted text-uppercase small">Size: M</p>
+                    </div>
+                    <div>
+                      <div class="def-number-input number-input safari_only mb-0 w-100">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          class="minus"></button>
+                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          class="plus"></button>
+                      </div>
+                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                        (Note, 1 piece)
+                      </small>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                          class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                      <a href="#!" type="button" class="card-link-secondary small text-uppercase"><i
+                          class="fas fa-heart mr-1"></i> Move to wish list </a>
+                    </div>
+                    <p class="mb-0"><span><strong>$17.99</strong></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row mb-4">
+              <div class="col-md-5 col-lg-3 col-xl-3">
+                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                  <img class="img-fluid w-100"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg" alt="Sample">
+                  <a href="#!">
+                    <div class="mask waves-effect waves-light">
+                      <img class="img-fluid w-100"
+                        src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
+                      <div class="mask rgba-black-slight waves-effect waves-light"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-9 col-xl-9">
+                <div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h5>Red hoodie</h5>
+                      <p class="mb-3 text-muted text-uppercase small">Shirt - red</p>
+                      <p class="mb-2 text-muted text-uppercase small">Color: red</p>
+                      <p class="mb-3 text-muted text-uppercase small">Size: M</p>
+                    </div>
+                    <div>
+                      <div class="def-number-input number-input safari_only mb-0 w-100">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          class="minus"></button>
+                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          class="plus"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                          class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                      <a href="#!" type="button" class="card-link-secondary small text-uppercase"><i
+                          class="fas fa-heart mr-1"></i> Move to wish list </a>
+                    </div>
+                    <p class="mb-0"><span><strong>$35.99</strong></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-primary mb-0"><i class="fas fa-info-circle mr-1"></i> Do not delay the purchase, adding
+              items to your cart does not mean booking them.</p>
+  
+          </div>
+        </div>
+        <!-- Card -->
+  
+        <!-- Card -->
+        <div class="card mb-3">
+          <div class="card-body">
+  
+            <h5 class="mb-4">Expected shipping delivery</h5>
+  
+            <p class="mb-0"> Thu., 12.03. - Mon., 16.03.</p>
+          </div>
+        </div>
+        <!-- Card -->
+  
+        <!-- Card -->
+        <div class="card mb-3">
+          <div class="card-body">
+  
+            <h5 class="mb-4">We accept</h5>
+  
+            <img class="mr-2" width="45px"
+              src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+              alt="Visa">
+            <img class="mr-2" width="45px"
+              src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
+              alt="American Express">
+            <img class="mr-2" width="45px"
+              src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+              alt="Mastercard">
+          </div>
+        </div>
+        <!-- Card -->
+  
+      </div>
+      <!--Grid column-->
+  
+      <!--Grid column-->
+      <div class="col-lg-4">
+  
+        <!-- Card -->
+        <div class="card mb-3">
+          <div class="card-body">
+  
+            <h5 class="mb-3">The total amount of</h5>
+  
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                Temporary amount
+                <span>$25.98</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                Shipping
+                <span>Gratis</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                <div>
+                  <strong>The total amount of</strong>
+                  <strong>
+                    <p class="mb-0">(including VAT)</p>
+                  </strong>
+                </div>
+                <span><strong>$53.98</strong></span>
+              </li>
+            </ul>
+  
+            <button type="button" class="btn btn-primary btn-block waves-effect waves-light">go to checkout</button>
+  
+          </div>
+        </div>
+        <!-- Card -->
+  
+        <!-- Card -->
+        <div class="card mb-3">
+          <div class="card-body">
+  
+            <a class="dark-grey-text d-flex justify-content-between" data-toggle="collapse" href="#collapseExample1"
+              aria-expanded="false" aria-controls="collapseExample1">
+              Add a discount code (optional)
+              <span><i class="fas fa-chevron-down pt-1"></i></span>
+            </a>
+  
+            <div class="collapse" id="collapseExample1">
+              <div class="mt-3">
+                <div class="md-form md-outline mb-0">
+                  <input type="text" id="discount-code1" class="form-control font-weight-light"
+                    placeholder="Enter discount code">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+  
+      </div>
+      <!--Grid column-->
+  
+    </div>
+</div>
+
+    <!--Grid row-->
+  
+  </section>
+  <!--Section: Block Content-->
+
+  <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+    <div style="background-color: #6351ce;">
+      <div class="container">
+  
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+  
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row-->
+  
+      </div>
+    </div>
+  
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+  
+      <!-- Grid row -->
+      <div class="row mt-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!">MDWordPress</a>
+          </p>
+          <p>
+            <a href="#!">BrandFlow</a>
+          </p>
+          <p>
+            <a href="#!">Bootstrap Angular</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Your Account</a>
+          </p>
+          <p>
+            <a href="#!">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!">Shipping Rates</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+</html>
